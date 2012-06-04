@@ -25,7 +25,7 @@ public class Main {
 
         Field field = new CartesianField(15,15);
 
-        GameManager gameManager = new OptimisticGameManager(field, new ObjectManagerImpl());
+        OptimisticGameManager gameManager = new OptimisticGameManager(field, new ObjectManagerImpl());
 
         OptimisticFieldPrinter fieldPrinter = new OptimisticFieldPrinter(field, System.out);
 
@@ -37,5 +37,7 @@ public class Main {
             }
             gameManager.step();
         }
+
+        System.out.println("Нищий накопил:  "+Integer.toString(gameManager.getLazarFund()));
     }
 }
