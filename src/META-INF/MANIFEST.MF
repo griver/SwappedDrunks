@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: lepenkin.drunks.core.jar
+Main-Class: problemofdrunks.Main
+
